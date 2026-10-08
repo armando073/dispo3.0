@@ -4,15 +4,19 @@ void main() {
     Dispositivo di1 = new Dispositivo();
     Dispositivo di2 = new Dispositivo();
 
-    di1.nombre = "Teclado";
+    /*di1.nombre = "Teclado";
     di1.tipo = "Entrada";
     di1.activo = true;
 
     di2.nombre = "Monitor";
     di2.tipo = "Salida";
-    di2.activo = false;
+    di2.activo = false;*/
 
-    di1.mostrarInformacion();
+    di1.setNombre("  ");
+    di1.setActivo(true);
+    di1.setTipo("  ");
+
+    /*di1.mostrarInformacion();
     System.out.println();
     di1.mostrarEstado();
     System.out.println("\n");
@@ -22,6 +26,7 @@ void main() {
     di2.mostrarEstado();
     di1.activo = false;
     System.out.println("\n");
-    di1.mostrarEstado();
+    di1.mostrarEstado();*/
 
+    System.out.println("El dispositivo de nombre "+ di1.getNombre()+ " es de tipo " + di1.getTipo() + " y actualmente esta "+ di1.isActivo());
 }
